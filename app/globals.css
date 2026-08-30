@@ -1,26 +1,87 @@
 @import "tailwindcss";
 
+@theme {
+  --color-char-50: #F4F4F3;
+  --color-char-100: #E4E4E2;
+  --color-char-300: #9C9C97;
+  --color-char-500: #54534C;
+  --color-char-700: #312F29;
+  --color-char-900: #1B1A16;
+
+  --color-moss-50: #EAF2EC;
+  --color-moss-100: #C9DFCE;
+  --color-moss-300: #7FAE8B;
+  --color-moss-500: #3E7A52;
+  --color-moss-600: #2F6141;
+  --color-moss-700: #254D34;
+  --color-moss-900: #132819;
+
+  --color-oil-50: #FCF3E1;
+  --color-oil-100: #F7E0B3;
+  --color-oil-300: #EFBE63;
+  --color-oil-500: #DE9B2C;
+  --color-oil-600: #B87E1F;
+  --color-oil-700: #8F6218;
+
+  --color-paper: #F8F6F0;
+  --color-paper-100: #F1EEE4;
+
+  --color-signal-500: #B84A32;
+  --color-signal-600: #95381F;
+
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui;
+  --font-body: "Inter", ui-sans-serif, system-ui;
+
+  --radius-sm: 4px;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui;
+  --font-body: "Inter", ui-sans-serif, system-ui;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F8F6F0;
+  color: #1B1A16;
+}
+
+/* Signature motif: overlapping "shingle course" divider used between sections.
+   Represents rows of shingles — grounded in the actual product, not decoration. */
+.shingle-divider {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.shingle-divider span {
+  flex: 1 0 64px;
+  height: 18px;
+  margin-left: -14px;
+  clip-path: polygon(20% 0, 100% 0, 80% 100%, 0% 100%);
+}
+.shingle-divider span:first-child {
+  margin-left: 0;
+}
+
+/* Visible keyboard focus, required quality floor */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #DE9B2C;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
