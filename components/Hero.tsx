@@ -8,8 +8,8 @@ type Props = {
 };
 
 export default function Hero({
-  headline = "Restore your roof. Protect your home. Save thousands.",
-  subhead = "Roof restoration is a safer, faster, far less expensive alternative to a full roof replacement — most jobs done in 1–2 days.",
+  headline = "Don't replace your roof until you know you need to.",
+  subhead = "Get an honest evaluation first. If restoration makes sense, we'll show you how. If you need a new roof, we'll tell you that too — and help you find a quality roofing company for a fair price.",
   localNote,
 }: Props) {
   return (
@@ -38,7 +38,7 @@ export default function Hero({
             </a>
           </div>
           <p className="mt-6 text-xs text-char-300">
-            No obligation. Most homeowners get an answer in under 3 minutes.
+            No pressure. No scare tactics. Just an honest look at your roof.
           </p>
         </div>
         <BeforeAfterSlider

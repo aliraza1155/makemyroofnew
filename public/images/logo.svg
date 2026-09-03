@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 130" width="480" height="130">
+  <!-- Roofline icon matching the reference logo: two overlapping pitched
+       roof outlines (gray back, green front), small window square -->
+  <g transform="translate(15,15)">
+    <path d="M50 0 L100 40 L88 40 L88 42 L60 20 L32 42 L32 40 L20 40 Z" fill="none" stroke="#54534C" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M40 15 L85 50 L73 50 L73 52 L48 32 L23 52 L23 50 L10 50 Z" fill="none" stroke="#2F6141" stroke-width="5" stroke-linejoin="round"/>
+    <rect x="30" y="28" width="8" height="8" fill="#2F6141"/>
+  </g>
+  <text x="130" y="55" font-family="Arial,sans-serif" font-weight="700" font-style="italic" font-size="30" fill="#1B1A16">Make My Roof</text>
+  <text x="130" y="90" font-family="Arial,sans-serif" font-weight="800" font-size="30" fill="#2F6141">NEW</text>
+</svg>

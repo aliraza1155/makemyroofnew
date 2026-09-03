@@ -1,19 +1,20 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const NAV = [
   { href: "/how-it-works", label: "How it works" },
   { href: "/locations/dallas-fort-worth-tx", label: "Locations" },
   { href: "/gallery", label: "Before & after" },
-  { href: "/reviews", label: "Reviews" },
-  { href: "/about", label: "About" },
+  { href: "/reviews", label: "Our promise" },
+  { href: "/about", label: "Uncle Morty" },
 ];
 
 export default function Header() {
   return (
     <header className="sticky top-0 z-40 bg-paper/95 backdrop-blur border-b border-char-100">
       <div className="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
-        <Link href="/" className="font-display font-700 text-lg text-char-900">
-          MakeMy<span className="text-moss-600">Roof</span>New
+        <Link href="/" className="flex items-center">
+          <Image src="/images/logo.svg" alt="MakeMyRoofNew" width={180} height={49} priority />
         </Link>
         <nav className="hidden md:flex items-center gap-7">
           {NAV.map((item) => (

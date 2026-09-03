@@ -1,8 +1,8 @@
 const STEPS = [
-  { n: "01", title: "Answer a few questions", body: "Tell us about your home and roof. Takes under a minute, no account needed." },
-  { n: "02", title: "Get your instant result", body: "See whether your roof is a fit for restoration, and an estimated price range." },
-  { n: "03", title: "Book a free inspection", body: "Pick a time that works. A local technician confirms everything in person, free." },
-  { n: "04", title: "Restore & protect", body: "Most jobs are complete in 1–2 days, backed by a 5-year transferable warranty." },
+  { n: "01", title: "Tell us about your roof", body: "Answer a few simple questions. Takes under a minute." },
+  { n: "02", title: "Get your free evaluation", body: "We assess your roof's actual condition — no guessing." },
+  { n: "03", title: "Get an honest recommendation", body: "Restore it, repair it, or replace it. We'll say which, and why." },
+  { n: "04", title: "We help you follow through", body: "Restoration? We handle it. Replacement? We'll connect you with a quality local roofer." },
 ];
 
 export default function ProcessSteps() {
